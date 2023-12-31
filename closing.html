@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>My Gallery</title>
+  <title>My Profile</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +10,17 @@
 </head>
 
 <body>
-  <!-- <img class="logo" src= ".\image\logo.png"> -->
   <div class="header">
     <div class="nav"><a href="index.html">Home</a></div>
     <div class="nav"><a href="profile.html">Profile</a></div>
-    <div class="nav"><a href="gallery.html" style="font-size: 52px; color: white;">Gallery</a></div>
-    <div class="nav"><a href="closing.html">Closing</a></div>
+    <div class="nav"><a href="gallery.html">Gallery</a></div>
+    <div class="nav"><a href="closing.html" style="font-size: 52px; color: white;">Closing</a></div>
   </div>
   <div class="main">
     <div class="title">
-      <h1>Gallery</h1>
+      <h1>Closing</h1>
     </div>
-    <div class="gallery">
-      <img class="photos" src=".\image\new-photos (1).jpg">
-      <img class="photos" src=".\image\new-photos (2).jpg">
-      <img class="photos" src=".\image\new-photos (3).jpg">
-      <img class="photos" src=".\image\new-photos (4).jpg">
+    <div class="intro">
     </div>
   </div>
   <div class="footer">
@@ -40,3 +35,11 @@
 
 </html>
 <script src="script.js"></script>
+<script>
+  // Get url query "message"
+  const tempurlParams = new URLSearchParams(window.location.search);
+  const message = tempurlParams.get('closing');
+
+  // display message into intro class
+  document.querySelector(".intro").innerHTML = "<h2>" + message + "</h2>";
+</script>

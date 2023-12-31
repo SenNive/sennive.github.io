@@ -35,7 +35,8 @@ html {
 }
 
 ::selection {
-  background-color: #f6fde0;
+  background-color: #f6fde0 !important;
+  color: inherit !important;
   /* color: rgb(21, 0, 255); */
   /* text-shadow: 2px 2px rgb(123, 46, 255); */
   margin: 0;

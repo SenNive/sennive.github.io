@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Homepage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <!-- input form to get message query -->
+            <form action="message.html" method="get">
+                <input type="text" name="message" placeholder="Message">
+                <input type="text" name="closing" placeholder="Closing">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    // on form submit redirect to index.html with query
+    document.querySelector("form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const message = document.querySelector("input[name='message']").value;
+        const closing = document.querySelector("input[name='closing']").value;
+        window.location.href = "index.html?message=" + message + "&closing=" + closing;
+    });
+
+</script>
