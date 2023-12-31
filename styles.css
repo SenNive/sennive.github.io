@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'silkscreennormal';
+  src: url('./font/slkscr-webfont.eot');
+  src: url('./font/slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./font/slkscr-webfont.woff2') format('woff2'),
+    url('./font/slkscr-webfont.woff') format('woff'),
+    url('./font/slkscr-webfont.ttf') format('truetype'),
+    url('./font/slkscr-webfont.svg#silkscreennormal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: "silkscreennormal"; */
+  color: #53494c;
+  /* color: #a68690; */
+  text-shadow: 2px 2px #a8959a;
+  /* text-shadow: 2px 2px #514246; */
+  /* text-shadow: 2px 2px rgb(21, 0, 255); */
+  font-size: 25px
+}
+
+html {
+  background: url("./image/background-new-right.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-font-smoothing: none;
+}
+
+::selection {
+  background-color: #f6fde0;
+  /* color: rgb(21, 0, 255); */
+  /* text-shadow: 2px 2px rgb(123, 46, 255); */
+  margin: 0;
+  padding: 0;
+}
+
+body {}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.logo {
+  float: right;
+  height: 120px;
+  margin: 20px;
+  filter: brightness(0.8);
+}
+
+.header,
+.main,
+.footer {
+  margin: auto;
+  max-width: 869px;
+  min-height: 30px;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  /* background-color: #cbfbed; */
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 30px 40px;
+}
+
+.nav {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: black;
+}
+
+.nav a {
+  font-size: 43px;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e0fdf5;
+  /* color: rgb(0, 42, 255); */
+}
+
+a:active {
+  color: #e6e0fd;
+  /* color: rgb(255, 255, 255); */
+}
+
+.main {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  margin-bottom: 15px;
+}
+
+.content {
+  display: inline-block;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.me {
+  display: inline-block;
+  width: 238px;
+  border: 3px ridge #e6e0fd;
+  /* border: 3px ridge rgb(17, 0, 255); */
+  border-radius: 15px;
+}
+
+.profile-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: auto;
+}
+
+.photos {
+  height: 279px;
+  border: 3px ridge #e6e0fd;
+  /* border: 3px ridge rgb(17, 0, 255); */
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-right: 3px solid rgb(255, 255, 255);
+  border-left: 3px solid rgb(255, 255, 255);
+  text-align: left;
+  padding: 5px 40px;
+}
+
+th {
+  font-size: 35px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contacts a {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  font-size: 30px;
+}
+
+.icon {
+  margin-right: 5px;
+  height: 30px;
+}

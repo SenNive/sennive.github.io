@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Homepage</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <img class="logo" src=".\image\logo.png">
+  <div class="header">
+    <div class="nav"><a href="index.html" style="font-size: 52px; color: white;">Home</a></div>
+    <div class="nav"><a href="profile.html">Profile</a></div>
+    <div class="nav"><a href="gallery.html">Gallery</a></div>
+    <div class="nav"><a href="activity.html">Activity</a></div>
+  </div>
+  <div class="main">
+    <div class="title">
+      <h1>Welcome to My Website</h1>
+    </div>
+    <div class="intro">
+      <!-- <h2>My name is Jonathan Immanuel, i am a student at SMP PAX ECCLESIA</h2>
+      <h2>Feel free to look around so that you can know me better</h2>
+      <h2>Hope you enjoy :)</h2> -->
+    </div>
+  </div>
+  <div class="footer">
+    <h2>My Contacts</h2>
+    <div class="contacts">
+      <a href="https://www.instagram.com/eug_45/" target="_blank"><img class="icon"
+          src=".\image\instagram.png">Instagram</a>
+      <a href="https://wa.me/6287884918280/" target="_blank"><img class="icon" src=".\image\whatsapp.png">Whatsapp</a>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  // Get url query "message"
+  const urlParams = new URLSearchParams(window.location.search);
+  const message = urlParams.get('message');
+
+  // if message is null or empty, set default message
+  // <h2>My name is Jonathan Immanuel, i am a student at SMP PAX ECCLESIA</h2>
+  // <h2>Feel free to look around so that you can know me better</h2>
+  // <h2>Hope you enjoy :)</h2>
+  if (message == null || message == "") {
+    message = "My name is Jonathan Immanuel, i am a student at SMP PAX ECCLESIA Feel free to look around so that you can know me better Hope you enjoy :)";
+  }
+
+  // display message into intro class
+  document.querySelector(".intro").innerHTML = "<h2>" + message + "</h2>";
+</script>
